@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<!-- Captain Planet Game HTML -->
-
 <!DOCTYPE html>
-
 <html lang="en-us">
-
   <head>
-
     <meta charset="UTF-8">
     <title>New York Times Search</title>
 
@@ -31,32 +25,20 @@
       <div class="row">
 
         <!-- Left Panel -->
-        <div class="col-lg-6">
+        <div class="col-lg">
 
-          <!-- Controls (Superpower Grow/Shrink)-->
+          <!-- Search Parameters -->
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title">Superpowers - Change Sizes!</h3>
+              <h3 class="panel-title">Search Parameters</h3>
             </div>
             <div class="panel-body">
-              <div class="text-center">
-                <button class="btn btn-default btn-lg normal-button"><span class="glyphicon glyphicon-ok-sign"></span> Normal</button>
-                <button class="btn btn-primary btn-lg grow-button"><span class="glyphicon glyphicon-plus-sign"></span> Grow</button>
-                <button class="btn btn-danger btn-lg shrink-button"><span class="glyphicon glyphicon-minus-sign"></span> Shrink</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Controls (Superpower Visibility) -->
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Superpowers - Invisibility!</h3>
-            </div>
-            <div class="panel-body">
-              <div class="text-center">
-                <button class="btn btn-default btn-lg vis-button"><span class="glyphicon glyphicon-eye-open"></span> Visible</button>
-                <button class="btn btn-info btn-lg invis-button"><span class="glyphicon glyphicon-eye-close"></span> Invisible</button>
-              </div>
+              <h5>Search Term:</h5>
+              <h5>Number of Records to Retrieve:</h5>
+              <h5>Start Year (Optional):</h5>
+              <h5>End Year:</h5>
+              <button class="btn btn-default">Search</button>
+              <button class="btn btn-default">Clear Results</button>
             </div>
           </div>
 
@@ -83,153 +65,12 @@
 
         </div>
 
-        <!-- Right Panel (Captain Planet Hero)-->
-        <div class="col-lg-6">
-
-          <!-- Captain Planet Image -->
-          <img class="img captain-planet" src="http://screencrush.com/442/files/2013/06/captain-planet-01.jpg" style="position:absolute; top:50px; left: 80px; z-index: -20; height: 300px">
-
         </div>
 
       </div>
 
     </div>
 
-    <script>
-
-      // Captain Planet JavaScript/jQuery
-      // Students: As you observe the code below, notice how jQuery takes a lot of the pain
-      // out of actions that might seem tedious with Vanilla JavaScript.
-      // jQuery Ready Function (encloses all other functions)
-
-      // ==============================
-
-      $(document).ready(function() {
-
-        // Audio Setup
-        // ===========
-
-        // Create an audio element with JavaScript
-        var audioElement = document.createElement("audio");
-
-        // Set it's source to the location
-        // of our Captain Planet theme song file.
-        audioElement.setAttribute("src", "Assets/captainplanet24.mp3");
-
-        // Theme Button
-        $(".theme-button").on("click", function() {
-          audioElement.play();
-        });
-
-        // Pause Button
-        $(".pause-button").on("click", function() {
-          audioElement.pause();
-        });
-
-        // Size Buttons
-        // ============
-
-        // Normal Size
-        $(".normal-button").on("click", function() {
-          $(".captain-planet").animate({ height: "300px" });
-        });
-
-        // Larger Size
-        $(".grow-button").on("click", function() {
-          $(".captain-planet").animate({ height: "500px" });
-        });
-
-        // Smaller Size
-        $(".shrink-button").on("click", function() {
-          $(".captain-planet").animate({ height: "100px" });
-        });
-
-        // Visibility Buttons
-        // ==================
-
-        // Make Visible
-        $(".vis-button").on("click", function() {
-          $(".captain-planet").animate({ opacity: "1" });
-        });
-
-        // Make Invisible
-        $(".invis-button").on("click", function() {
-          $(".captain-planet").animate({ opacity: "0.05" });
-        });
-
-        // Move Buttons
-        // ============
-
-        // Move Captain Planet Upward
-        $(".up-button").on("click", function() {
-          $(".captain-planet").animate({ top: "-=200px" }, "normal");
-        });
-
-        // Move Captain Planet Downward
-        $(".down-button").on("click", function() {
-          $(".captain-planet").animate({ top: "+=200px" }, "normal");
-        });
-
-        // Move Captain Planet Leftward
-        $(".left-button").on("click", function() {
-          $(".captain-planet").animate({ left: "-=200px" }, "normal");
-        });
-
-        // Move Captain Planet to the Right
-        $(".right-button").on("click", function() {
-          $(".captain-planet").animate({ left: "+=200px" }, "normal");
-        });
-
-        // Bring Captain Planet Back to His First Position
-        $(".back-button").on("click", function() {
-          $(".captain-planet").animate({ top: "50px", left: "80px" }, "fast");
-        });
-
-        // Move Events for Keyboard Presses
-        // ============================
-
-        // Keyboard Up
-        $(document).keyup(function(e) {
-          switch (e.which) {
-            case 38:
-              $(".captain-planet").animate({ top: "-=200px" }, "normal"); }
-        });
-
-        // Keyboard Down
-        $(document).keyup(function(e) {
-          switch (e.which) {
-            case 40:
-              $(".captain-planet").animate({ top: "+=200px" }, "normal"); }
-        });
-
-        // Keyboard Left
-        $(document).keyup(function(e) {
-          switch (e.which) {
-            case 37:
-              $(".captain-planet").animate({ left: "-=200px" }, "normal"); }
-        });
-
-        // Keyboard Right
-        $(document).keyup(function(e) {
-          switch (e.which) {
-            case 39:
-              $(".captain-planet").animate({ left: "+=200px" }, "normal"); }
-        });
-      });
-
-    </script>
-
   </body>
 
 </html>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-	<title>New York Times API</title>
-</head>
-<body>
-
-</body>
-</html>
->>>>>>> 1a913118c7e69c1883926168fff78832175c4805
