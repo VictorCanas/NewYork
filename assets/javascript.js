@@ -1,6 +1,5 @@
 //https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=e2a00bd64c074740b1fca74ef2f96bde&q=toys&begin_date=20100101&end_date=20150101
-//$("#NYT-search").on("click", function(event) 
-$(".btn-default").on("click", function(event)
+$("#NYT-search").on("click", function(event) 
 {
 
         // Preventing the submit button from trying to submit the form
